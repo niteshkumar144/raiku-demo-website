@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Raiku: Institutional-Grade Certainty on Solana – Overview, features, team, funding, roadmap, and interactive quiz.">
+    <title>Raiku – Making Solana Inevitable</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://pbs.twimg.com/profile_images/1970763046403383296/CB8ExnNp.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://pbs.twimg.com/profile_images/1970763046403383296/CB8ExnNp.jpg" alt="Raiku Logo">
+                <span>Raiku</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#funding">Funding</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+                <li><a href="#links">Links</a></li>
+            </ul>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div class="hero-content">
+            <h1>Raiku: Making Solana Inevitable</h1>
+            <p>Enterprise-grade certainty: Deterministic execution, sub-30ms pre-confirmations, and guaranteed block inclusion for internet capital markets.</p>
+            <a href="https://www.raiku.com/" class="cta-btn" target="_blank">Explore Raiku</a>
+        </div>
+        <div class="particles"></div>
+    </header>
+
+    <section id="overview" class="section">
+        <h2>What is Raiku?</h2>
+        <p>Raiku is a high-performance coordination layer for Solana, reengineering block building from first principles to deliver deterministic execution, sub-30ms pre-confirmations, and guaranteed block inclusion. It solves Solana's congestion issues (up to 75% tx failure during peaks) by creating a fair two-sided marketplace for blockspace, empowering developers, validators, traders, and institutions with predictable, scalable infrastructure.</p>
+        <p>Using Solana's trusted validators via a lightweight Sidecar, 500+ global edge nodes, and an advanced scheduling engine, Raiku enables applications in finance, AI, DePIN, and gaming. Development started July 2024; devnet live since Dec 2024, testnet with partners (Kiln, Figment, Everstake, Chorus One, Blockdaemon) operational.</p>
+    </section>
+
+    <section id="features" class="section">
+        <h2>Key Features</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/2811/2811806.png" alt="Pre-Confirmations Icon" loading="lazy">
+                <h3>Sub-30ms Pre-Confirmations</h3>
+                <p>>99.9% reliability; pre-book blockspace up to 60s ahead for microsecond precision.</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/2995/2995675.png" alt="Low Latency Icon" loading="lazy">
+                <h3>Low-Latency Coordination</h3>
+                <p>500+ edge nodes worldwide for instant settlement and deterministic outcomes.</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/1087/1087842.png" alt="Scheduling Icon" loading="lazy">
+                <h3>Advanced Scheduling</h3>
+                <p>Reserve compute units; never fail under extreme stress with programmable control.</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/867/867657.png" alt="Execution Icon" loading="lazy">
+                <h3>Guaranteed Inclusion</h3>
+                <p>Leverages Solana validators; compatible with Anza (Agave) and Firedancer clients.</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/263/263073.png" alt="Marketplace Icon" loading="lazy">
+                <h3>Blockspace Marketplace</h3>
+                <p>Fair auctions for tailored blockspace; boosts validator revenue via Sidecar plugins.</p>
+            </div>
+            <div class="feature-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/2272/2272989.png" alt="Integration Icon" loading="lazy">
+                <h3>Easy Integration</h3>
+                <p>Lite mode in 2 lines of code; full customization for enterprises.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="section">
+        <h2>How It Works</h2>
+        <p>Raiku decouples block building from Solana L1, creating a parallel execution layer. Developers submit txs to nearest edge nodes; the Coordination Engine runs slot auctions and schedules via advanced engine. Validators deploy Raiku Sidecar for inclusion guarantees.</p>
+        <ol>
+            <li><strong>Submission</strong>: Txs to low-latency nodes for processing.</li>
+            <li><strong>Auction & Schedule</strong>: Pre-book or bid for slots; deterministic outcomes.</li>
+            <li><strong>Execution</strong>: Sidecar integrates with validators for secure inclusion.</li>
+            <li><strong>Confirmation</strong>: Sub-30ms pre-conf with >99.9% finality; supports global accounts for shared state.</li>
+        </ol>
+        <p>Empowers HFT, oracles, and node ops with edge compute for 30-50ms speeds. Testnet live; v2 SDK for devs in late 2025.</p>
+    </section>
+
+    <section id="quiz" class="section">
+        <h2>Test Your Raiku Knowledge</h2>
+        <p>Challenge yourself with our interactive quiz to master Raiku's Solana infrastructure!</p>
+        <div class="quiz-container">
+            <svg class="progress-ring" width="80" height="80">
+                <circle class="progress-ring__circle" stroke="#333" stroke-width="8" fill="transparent" r="30" cx="40" cy="40"/>
+                <circle id="progress-ring-fill" stroke="#bfff00" stroke-width="8" fill="transparent" r="30" cx="40" cy="40"/>
+                <text id="progress-text" x="40" y="45" text-anchor="middle" font-size="16">1/10</text>
+            </svg>
+            <div id="question-container" class="quiz-card"></div>
+            <button id="next-btn" style="display:none;">Next Question</button>
+            <div id="result" style="display:none;"></div>
+        </div>
+    </section>
+
+    <section id="team" class="section">
+        <h2>Team</h2>
+        <p>Raiku's ~20-person distributed team (Europe, Asia, US) brings Web3, FinTech, and Solana expertise. Founded late 2023 by Solana veterans for institutional reliability.</p>
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="https://pbs.twimg.com/profile_images/1967560851390361600/MCF5L3Gp.jpg" alt="Robin A. Nordnes - Founder & CEO" loading="lazy">
+                <h3>Robin A. Nordnes</h3>
+                <p>Founder & CEO</p>
+                <p>Ex-CTO at Outlier Ventures; led blockchain strategy research. Vision: "Predictable finality for institutional DeFi." Serial entrepreneur driving Raiku's $13.5M raises. <a href="https://x.com/degenroot" target="_blank">@degenroot</a></p>
+            </div>
+            <div class="team-member">
+                <img src="https://pbs.twimg.com/profile_images/1969046949006303233/eHtW0LmN.jpg" alt="Waleed AlZuhair - Head of Capital Markets" loading="lazy">
+                <h3>Waleed AlZuhair</h3>
+                <p>Head of Capital Markets & Institutions</p>
+                <p>Expert in GenTech/AI, Data Services, FinTech. MSc Imperial College London; BA SOAS. Leads institutional integrations for high-performance Solana apps. <a href="https://x.com/waleedtalzuhair" target="_blank">@waleedtalzuhair</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="funding" class="section">
+        <h2>Funding</h2>
+        <p>Raiku raised <strong>$13.5M</strong> in SAFEs with token warrants to build predictable Solana infra.</p>
+        <ul>
+            <li><strong>Pre-Seed (Apr-Oct 2024):</strong> $2.25M, co-led by Figment Capital & Big Brain Holdings. Others: Reciprocal Ventures, Anagram.</li>
+            <li><strong>Seed (Mar-Aug 2025):</strong> $11.25M, led by Pantera Capital. Others: HashKey Capital, Jump Crypto, Lightspeed Faction, Anatoly Yakovenko (angel), Austin Federa, Kash Dhanda, Julien Bouteloup, Chorus One, Construct Ventures.</li>
+        </ul>
+        <p>Funds fuel core tech for institutional trading, real-time payments, and mainnet 2026.</p>
+    </section>
+
+    <section id="roadmap" class="section">
+        <h2>Roadmap & Updates</h2>
+        <p>As of Oct 2025: Testnet live with validator partners; iterating on performance. Supported by Solana Foundation & Superteam.</p>
+        <div class="roadmap-timeline">
+            <div class="milestone">Late 2023: Inception by Solana researchers.</div>
+            <div class="milestone">Jul-Dec 2024: Dev started; devnet deployed.</div>
+            <div class="milestone">2025: Pre-seed/seed funding; testnet live; v2 SDK for devs (late 2025).</div>
+            <div class="milestone">2026: Mainnet launch; full institutional integrations.</div>
+        </div>
+    </section>
+
+    <section id="links" class="section">
+        <h2>Important Links</h2>
+        <ul class="links-list">
+            <li><a href="https://www.raiku.com/" target="_blank">Official Website</a></li>
+            <li><a href="https://docs.raiku.com/" target="_blank">Documentation</a></li>
+            <li><a href="https://x.com/raikucom" target="_blank">X (Twitter)</a></li>
+            <li><a href="https://discord.com/invite/raikucom" target="_blank">Discord</a></li>
+            <li><a href="https://www.raiku.com/blog/raiku-raises-13-5m-to-power-institutional-grade-certainty-on-solana" target="_blank">Funding Blog</a></li>
+            <li><a href="https://raiku.ghost.io/" target="_blank">News Blog</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Raiku Community Project. Fan-made for Discord contributions. Built with ❤️ for Raiku.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
